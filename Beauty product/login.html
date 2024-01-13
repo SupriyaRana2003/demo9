@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(129, 113, 193);
+        }
+        .login-page{
+            border: 1px solid rgb(26, 7, 43);
+            border-radius: 10px;
+            margin: 150px 30px 20px 500px;
+            background-color: rgb(192, 24, 178);
+            width: 500px;
+            height: 400px;
+            text-align: center;
+            box-shadow:30px 20px rgb(157, 189, 177) ;
+        }
+        h1{
+            text-transform: uppercase;
+            margin-top: 80px;
+        }
+        
+
+
+    </style>
+</head>
+<script>
+   function logIn(){
+    var email_id=document.getElementById('email_id').value;
+    var pass=document.getElementById('pass').value;
+    if(email_id!="" && pass!=""){
+        var arr=new Array(email_id,pass);
+        var jData=JSON.stringify(arr);
+        localStorage.setItem('uinfo',jData);
+        window.location='index.html';
+    }
+    else{
+        alert('please insert email and password')
+    }
+   }
+   
+</script>
+<body>
+ <div class="login-page">
+    <h1>Login</h1>
+    <form name="login">
+        Username<input type="email" name="email_id" id="email_id"><br><br>
+        Password<input type="password" name="pass" id="pass"><br><br>
+        <button type="button" onclick="logIn()">Login</button>
+    </form>
+ </div>
+</body>
+</html>

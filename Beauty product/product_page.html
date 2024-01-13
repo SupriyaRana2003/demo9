@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==Title======================== -->
+    <title>Product Page </title>
+    <!-- ===========CSS============ -->
+    <link rel="stylesheet" href="style.css"/>
+    <!-- ===Fav-icon========== -->
+    <link rel="shortcut icon" href="image/fav-icon.png">
+    <!-- == FontAwesome-for-Icons========== -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <!-- ==poppins-font================= -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body>
+    <!--==navigation=========== -->
+    <nav class="navigation">
+        <!-- *logo************ -->
+        <a href="index.html" class="logo">
+            <img src="image/th..jpg"/>
+        </a>
+        <!-- *search********** -->
+        <form class="search-box">
+            <input type="text" placeholder="Search Product Here " required>
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <!-- *btns********** -->
+        <div class="nav-btns">
+            <!--user-->
+
+            <a href="login.html" class="nav-user">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <!-- cart -->
+            <a href="#" class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+         </div>
+       </nav>
+       <!-- nav-end -->
+
+   <!-- ====product-page===== -->
+   <section id="product_details">
+
+       <!-- ===img====== -->
+       <div class="d-product-img">
+          <img src="image/r1.jpg">
+       </div>
+
+       <!-- ***text***** -->
+       <div class="d-product-text">
+        <!-- category -->
+         <span class="category">Cosmetic> Fase Mackup </span>
+         <!-- title -->
+         <strong>Bridal EyeLashies With Glue</strong>
+         <!-- rating -->
+         <span class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star-half-stroke"></i>
+          <span>200 Review's</span>
+        </span>
+          <!-- details=== -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis, culpa vitae officia quae consequuntur molestiae, non sunt nostrum soluta dolore maiores placeat aut. Exercitationem impedit quam molestiae alias eveniet!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa reprehenderit dolore aliquid veritatis dolores, corrupti qui vitae rerum enim maxime accusamus adipisci error quaerat quibusdam labore ab hic.</p>
+          <!-- ==price== -->
+          <span class="price">50$<del>60$</del></span>
+          <!-- quantity -->
+          <div class="quantity">
+              <span>Quantity</span>
+              <input type="number" min="1" value="1"/>
+          </div>
+          <!-- ==add-to-cart -->
+          <a href="#" class="add-cart-btn">Add To Cart</a>
+       </div>
+
+       </section>
+          <!-- ====footer==== -->
+            <footer>
+              <div class="footer-container">
+                <div class="footer-company-box">
+                 <!-- logo -->
+                 <a href="#" class="footer-logo">Logo</a>
+                <!-- detail -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 <!-- social -->
+                <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                <a href="#"><i class="fa-brands fa-youtube"></i> </a>
+               </div>
+             </div>
+
+         <!-- *******link-box********** -->
+           <div class="footer-link-box">
+                <strong>Main Link's</strong>
+              <ul>
+                  <li><a href="#">Our Product's</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Disclamiser</a></li>
+                  <li><a href="#">Trem's And Condition's </a></li>
+              </ul>
+             </div>
+          <!-- *******link-box********** -->
+           <div class="footer-link-box">
+               <strong>Main Link's</strong>
+               <ul>
+               <li><a href="#">Our Product's</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="#">Disclamiser</a></li>
+             <li><a href="#">Trem's And Condition's </a></li>
+            </ul>
+          </div>
+          <!-- *******link-box********** -->
+          <div class="footer-link-box">
+            <strong>Main Link's</strong>
+            <ul>
+             <li><a href="#">Our Product's</a></li>
+             <li><a href="#">Privacy Policy</a></li>
+             <li><a href="#">Disclamiser</a></li>
+             <li><a href="#">Trem's And Condition's </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- *****bottom*************-->
+        <div class="footer-bottom">
+          <span class="footer-owner">Made By Going To Internet</span>
+           <span class="Copyright"> © Copyright 2022 -Going To Internet</span>
+        </div>
+      </footer>
+
+       
+       <!-- ===Jquery======== -->
+       <script src="js/jquery-3.7.1.js"></script>
+       <script>
+        /*==filter-link-active=========*/
+        var selector='.new-p-heading li';
+
+        $(selector).on('click',function(){
+            $(selector).removeClass('active')
+            $(this).addClass('active')
+        });
+        /*-box-filter-------*/
+        $(document).ready(function(){
+            $('.new-p-heading li').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.new-product-box').show('1000');
+                }else{
+                    $('.new-product-box').not('.'+value).hide('1000');
+                    $('.new-product-box').filter('.'+value).show('1000');
+                }
+            })
+        });
+       </script>
+       </body>
+       </html>
